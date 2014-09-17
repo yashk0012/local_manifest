@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Common Repository -->
+        
+        <project path="device/sony/qcom-common" name="M2Dev/android_device_sony_qcom-common" revision="cm-11.0" />
+        
+    <!-- Kernels -->
+    
+        <project path="kernel/sony/eagle" name="M2Dev/android_kernel_sony_eagle" revision="cm-11.0" />
+        
+    <!-- Devices -->
+    
+        <project path="device/sony/eagle" name="M2Dev/android_device_sony_eagle" revision="cm-11.0" />
+       
+	
+    <!-- Proprietary blobs -->
+    
+	<project path="vendor/sony" name="M2Dev/proprietary_vendor_sony" revision="cm-11.0" />
+	
+    <!-- HALs --> 
+
+        
+</manifest>
