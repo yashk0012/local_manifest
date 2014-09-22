@@ -19,6 +19,7 @@
 	<project path="vendor/sony" name="M2Dev/proprietary_vendor_sony" revision="cm-11.0" />
 	
     <!-- HALs --> 
-
+  <project path="hardware/qcom/display-caf-new" name="CyanogenMod/android_hardware_qcom_display-caf-new" groups="caf" />
+  <project path="hardware/qcom/media-caf-new" name="CyanogenMod/android_hardware_qcom_media-caf-new" groups="caf" />
         
 </manifest>
