@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Common Repository -->
+    <!-- Common Repositories -->
         
-        <project path="device/sony/qcom-common" name="M2Dev/android_device_sony_qcom-common" revision="cm-11.0" />
+        <project path="device/sony/qcom-common" name="CyanogenMod/android_device_sony_qcom-common" remote="github" revision="cm-11.0" />
         <project path="device/sony/common" name="CyanogenMod/android_device_sony_common" remote="github" revision="cm-11.0" />
         <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-11.0" />
     <!-- Kernels -->
