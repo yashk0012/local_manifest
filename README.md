@@ -1,38 +1,13 @@
-This is the local manifest and instructions for building CyanogenMod 11 (or AOSP ROMS) for Sony M2 (eagle) released in 2014
+CM11 for Xperia M2
+==============
 
-Please setup your build enviroment as instructed on the link below, only follow up to the "Get Prebuilt Apps" stage, after which you can follow instructions mentioned here.
+The local manifests for building CM11 for Sony Xperia M2.
 
-http://wiki.cyanogenmod.org/w/Build_for_yuga
+To sync:
 
-1) After getting the prebuilt apps move back to root cyanogenmod dir
-```
-cd ~/android/system
-```
-
-2) Get the local manifest
-```
-mkdir -p ~/android/system/.repo/local_manifests
-curl https://raw.githubusercontent.com/M2Dev/local_manifest/blob/master/default.xml > ~/android/system/.repo/local_manifests/default.xml
-```
-
-3) repo sync (again) to download the additional repositories
-```
-repo sync -j8 --no-clone-bundle
-```
-4) Start the build process for the device you own
-*Note: this takes a long time*
-```
-. build/envsetup.sh
-```
-
-```
-  breakfast cm_eagle-userdebug
-  brunch cm_eagle-userdebug
-```
-
-  
-To run a sequential build simply run the ```breakfast``` and ```brunch``` commands again for your device.
-
-To remove all compiled files after running ```brunch```, simply run ```make clean```
-
-To get the latest patches from cyanogenmod run ```repo sync```
+    repo init -u git://github.com/CyanogenMod/android.git -b cm-11.0
+    curl --create-dirs -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.githubusercontent.com/M2Dev/local_manifest/master/local_manifest.xml
+    repo sync
+    sh vendor/cm/get-prebuilts
+    . build/envsetup.sh
+    brunch cm_eagle-userdebug
