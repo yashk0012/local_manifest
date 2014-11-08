@@ -5,6 +5,7 @@
         <project path="device/sony/qcom-common" name="CyanogenMod/android_device_sony_qcom-common" remote="github" revision="cm-11.0" />
         <project path="device/sony/common" name="CyanogenMod/android_device_sony_common" remote="github" revision="cm-11.0" />
         <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-11.0" />
+        <project path="device/sony/msm8226-common" name="CyanogenMod/android_device_sony_msm8226-common" remote="github" revision="cm-11.0" />
     
     <!-- Kernels -->
     
@@ -12,13 +13,12 @@
         
     <!-- Devices -->
     
-        <project path="device/sony/eagle" name="M2Dev/android_device_sony_eagle" revision="cm-11.0" />
+        <project path="device/sony/eagle" name="android-legacy/android_device_sony_eagle" revision="cm-11.0" />
        
 	
     <!-- Proprietary blobs -->
     
     	<project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" revision="cm-11.0" />
-	<project path="vendor/sony/eagle" name="M2Dev/proprietary_vendor_sony_eagle" revision="cm-11.0" />
 	
     <!-- HALs -->
     
