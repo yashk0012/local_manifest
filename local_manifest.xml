@@ -18,7 +18,7 @@
 	
     <!-- Proprietary blobs -->
     
-    	<project path="vendor/sony" name="TheMuppets/proprietary_vendor_sony" revision="cm-11.0" />
+    	<project path="vendor/sony" name="android-legacy/proprietary_vendor_sony" revision="cm-11.0" />
 	
     <!-- HALs -->
     
